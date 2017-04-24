@@ -102,6 +102,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -182,6 +183,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -237,6 +239,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -319,6 +322,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -401,6 +405,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -483,6 +488,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -602,6 +608,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -646,6 +653,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -717,6 +725,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -772,6 +781,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -864,6 +874,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -908,6 +919,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -979,6 +991,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1048,6 +1061,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1092,6 +1106,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1157,6 +1172,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1203,6 +1219,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1303,6 +1320,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1347,6 +1365,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1418,6 +1437,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1487,6 +1507,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1531,6 +1552,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1596,6 +1618,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1642,6 +1665,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1742,6 +1766,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1786,6 +1811,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1857,6 +1883,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1926,6 +1953,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -1970,6 +1998,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2035,6 +2064,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2081,6 +2111,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2181,6 +2212,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2225,6 +2257,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2296,6 +2329,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2365,6 +2399,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2409,6 +2444,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2474,6 +2510,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2520,6 +2557,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2620,6 +2658,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2664,6 +2703,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2735,6 +2775,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2804,6 +2845,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2848,6 +2890,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2913,6 +2956,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -2959,6 +3003,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3020,6 +3065,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3064,6 +3110,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3110,6 +3157,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3210,6 +3258,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3254,6 +3303,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3325,6 +3375,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3394,6 +3445,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3438,6 +3490,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3503,6 +3556,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3549,6 +3603,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3608,6 +3663,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3640,6 +3696,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3739,6 +3796,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3810,6 +3868,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -3869,6 +3928,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3901,6 +3961,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -3998,6 +4059,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4106,6 +4168,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4138,6 +4201,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4197,6 +4261,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4229,6 +4294,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4261,6 +4327,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4293,6 +4360,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4325,6 +4393,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4357,6 +4426,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4416,6 +4486,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4448,6 +4519,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4480,6 +4552,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4512,6 +4585,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4544,6 +4618,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4576,6 +4651,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4645,6 +4721,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4689,6 +4766,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4735,6 +4813,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4835,6 +4914,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4879,6 +4959,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -4950,6 +5031,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5019,6 +5101,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5063,6 +5146,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5128,6 +5212,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5174,6 +5259,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5274,6 +5360,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5318,6 +5405,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5389,6 +5477,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5458,6 +5547,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5502,6 +5592,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5567,6 +5658,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5613,6 +5705,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5674,6 +5767,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -5718,6 +5812,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -5764,6 +5859,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -5825,6 +5921,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5869,6 +5966,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -5915,6 +6013,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6015,6 +6114,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6059,6 +6159,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6130,6 +6231,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6199,6 +6301,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6243,6 +6346,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6308,6 +6412,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6354,6 +6459,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6415,6 +6521,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6459,6 +6566,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6505,6 +6613,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6605,6 +6714,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6649,6 +6759,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6720,6 +6831,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6789,6 +6901,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6833,6 +6946,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6898,6 +7012,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -6944,6 +7059,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7044,6 +7160,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7088,6 +7205,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7159,6 +7277,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7228,6 +7347,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7272,6 +7392,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7337,6 +7458,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7383,6 +7505,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7483,6 +7606,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7527,6 +7651,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7596,6 +7721,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7640,6 +7766,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7674,6 +7801,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7720,6 +7848,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7779,6 +7908,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7811,6 +7941,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7843,6 +7974,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7875,6 +8007,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7907,6 +8040,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7939,6 +8073,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -7998,6 +8133,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8030,6 +8166,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8062,6 +8199,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8094,6 +8232,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8126,6 +8265,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8158,6 +8298,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8227,6 +8368,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8271,6 +8413,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8317,6 +8460,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8394,6 +8538,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8438,6 +8583,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8503,6 +8649,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8549,6 +8696,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8612,6 +8760,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8665,6 +8814,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8709,6 +8859,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8755,6 +8906,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8847,6 +8999,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8891,6 +9044,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -8962,6 +9116,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9023,6 +9178,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9067,6 +9223,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9132,6 +9289,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9178,6 +9336,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9229,6 +9388,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9261,6 +9421,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9293,6 +9454,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9325,6 +9487,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9357,6 +9520,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9389,6 +9553,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9440,6 +9605,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9472,6 +9638,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9504,6 +9671,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9536,6 +9704,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9568,6 +9737,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9600,6 +9770,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "CONNECT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9661,6 +9832,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9705,6 +9877,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9751,6 +9924,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9806,6 +9980,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9925,6 +10100,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -9969,6 +10145,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10040,6 +10217,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10101,6 +10279,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10145,6 +10324,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10210,6 +10390,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10256,6 +10437,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10309,6 +10491,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10353,6 +10536,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10399,6 +10583,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10454,6 +10639,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10536,6 +10722,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10614,6 +10801,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10646,6 +10834,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10678,6 +10867,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10710,6 +10900,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10742,6 +10933,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10774,6 +10966,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10806,6 +10999,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10858,6 +11052,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10890,6 +11085,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10922,6 +11118,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10954,6 +11151,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -10986,6 +11184,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11018,6 +11217,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11050,6 +11250,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11110,6 +11311,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11142,6 +11344,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11174,6 +11377,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11206,6 +11410,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11238,6 +11443,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11270,6 +11476,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11302,6 +11509,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11354,6 +11562,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11386,6 +11595,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11418,6 +11628,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11450,6 +11661,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11482,6 +11694,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11514,6 +11727,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11546,6 +11760,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11606,6 +11821,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11638,6 +11854,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11670,6 +11887,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11702,6 +11920,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11734,6 +11953,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11766,6 +11986,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11798,6 +12019,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11842,6 +12064,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11874,6 +12097,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11906,6 +12130,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11938,6 +12163,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -11970,6 +12196,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12002,6 +12229,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12034,6 +12262,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PROXY",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12090,6 +12319,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12172,6 +12402,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12254,6 +12485,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12336,6 +12568,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12418,6 +12651,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12500,6 +12734,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12582,6 +12817,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12664,6 +12900,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12746,6 +12983,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12828,6 +13066,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -12910,6 +13149,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13000,6 +13240,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13098,6 +13339,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13188,6 +13430,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13286,6 +13529,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13376,6 +13620,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13474,6 +13719,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13564,6 +13810,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13662,6 +13909,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13752,6 +14000,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13850,6 +14099,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -13940,6 +14190,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14038,6 +14289,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14128,6 +14380,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14226,6 +14479,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14316,6 +14570,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14414,6 +14669,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14504,6 +14760,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14602,6 +14859,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14692,6 +14950,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14790,6 +15049,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14880,6 +15140,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -14978,6 +15239,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15068,6 +15330,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15166,6 +15429,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15256,6 +15520,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15338,6 +15603,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15428,6 +15694,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15510,6 +15777,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15592,6 +15860,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15682,6 +15951,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15764,6 +16034,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15846,6 +16117,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -15928,6 +16200,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -16010,6 +16283,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -16092,6 +16366,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -16174,6 +16449,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "",
       "Version": "v1",
@@ -16355,6 +16631,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16474,6 +16751,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16518,6 +16796,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16589,6 +16868,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16658,6 +16938,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16702,6 +16983,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16767,6 +17049,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16813,6 +17096,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16884,6 +17168,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16945,6 +17230,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -16989,6 +17275,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17035,6 +17322,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17096,6 +17384,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17140,6 +17429,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17186,6 +17476,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17286,6 +17577,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17330,6 +17622,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17401,6 +17694,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17470,6 +17764,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17514,6 +17809,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17579,6 +17875,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17625,6 +17922,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17686,6 +17984,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17730,6 +18029,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17776,6 +18076,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17839,6 +18140,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -17921,6 +18223,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -18003,6 +18306,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -18093,6 +18397,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -18191,6 +18496,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -18281,6 +18587,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -18379,6 +18686,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "apps",
       "Version": "v1beta1",
@@ -18535,6 +18843,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "authentication.k8s.io",
       "Version": "v1",
@@ -18623,6 +18932,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "authentication.k8s.io",
       "Version": "v1beta1",
@@ -18744,6 +19054,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "authorization.k8s.io",
       "Version": "v1",
@@ -18807,6 +19118,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "authorization.k8s.io",
       "Version": "v1",
@@ -18862,6 +19174,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "authorization.k8s.io",
       "Version": "v1",
@@ -18950,6 +19263,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "authorization.k8s.io",
       "Version": "v1beta1",
@@ -19013,6 +19327,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "authorization.k8s.io",
       "Version": "v1beta1",
@@ -19068,6 +19383,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "authorization.k8s.io",
       "Version": "v1beta1",
@@ -19181,6 +19497,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19300,6 +19617,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19344,6 +19662,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19415,6 +19734,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19484,6 +19804,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19528,6 +19849,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19593,6 +19915,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19639,6 +19962,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19700,6 +20024,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19744,6 +20069,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19790,6 +20116,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19853,6 +20180,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -19935,6 +20263,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -20025,6 +20354,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v1",
@@ -20156,6 +20486,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20275,6 +20606,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20319,6 +20651,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20390,6 +20723,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20459,6 +20793,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20503,6 +20838,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20568,6 +20904,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20614,6 +20951,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20675,6 +21013,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20719,6 +21058,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20765,6 +21105,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20828,6 +21169,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -20910,6 +21252,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -21000,6 +21343,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "autoscaling",
       "Version": "v2alpha1",
@@ -21164,6 +21508,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21283,6 +21628,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21327,6 +21673,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21398,6 +21745,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21467,6 +21815,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21511,6 +21860,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21576,6 +21926,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21622,6 +21973,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21683,6 +22035,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21727,6 +22080,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21773,6 +22127,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21836,6 +22191,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -21918,6 +22274,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -22008,6 +22365,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v1",
@@ -22139,6 +22497,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22258,6 +22617,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22302,6 +22662,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22373,6 +22734,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22442,6 +22804,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22486,6 +22849,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22551,6 +22915,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22597,6 +22962,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22658,6 +23024,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22702,6 +23069,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22748,6 +23116,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22848,6 +23217,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22892,6 +23262,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -22963,6 +23334,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23032,6 +23404,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23076,6 +23449,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23141,6 +23515,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23187,6 +23562,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23248,6 +23624,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23292,6 +23669,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23338,6 +23716,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23401,6 +23780,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23483,6 +23863,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23565,6 +23946,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23655,6 +24037,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23753,6 +24136,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23843,6 +24227,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -23941,6 +24326,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "batch",
       "Version": "v2alpha1",
@@ -24126,6 +24512,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24170,6 +24557,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24241,6 +24629,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24302,6 +24691,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24346,6 +24736,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24411,6 +24802,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24457,6 +24849,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24520,6 +24913,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24583,6 +24977,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24638,6 +25033,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24720,6 +25116,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "certificates.k8s.io",
       "Version": "v1beta1",
@@ -24876,6 +25273,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -24958,6 +25356,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25040,6 +25439,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25159,6 +25559,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25203,6 +25604,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25274,6 +25676,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25343,6 +25746,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25387,6 +25791,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25452,6 +25857,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25498,6 +25904,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25559,6 +25966,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25603,6 +26011,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25649,6 +26058,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25749,6 +26159,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25793,6 +26204,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25864,6 +26276,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25933,6 +26346,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -25977,6 +26391,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26042,6 +26457,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26088,6 +26504,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26159,6 +26576,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26220,6 +26638,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26264,6 +26683,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26310,6 +26730,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26371,6 +26792,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26415,6 +26837,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26461,6 +26884,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26561,6 +26985,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26605,6 +27030,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26676,6 +27102,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26745,6 +27172,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26789,6 +27217,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26854,6 +27283,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26900,6 +27330,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -26961,6 +27392,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27005,6 +27437,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27051,6 +27484,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27151,6 +27585,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27195,6 +27630,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27266,6 +27702,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27335,6 +27772,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27379,6 +27817,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27444,6 +27883,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27490,6 +27930,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27590,6 +28031,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27634,6 +28076,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27705,6 +28148,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27774,6 +28218,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27818,6 +28263,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27883,6 +28329,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27929,6 +28376,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -27990,6 +28438,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28034,6 +28483,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28080,6 +28530,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28141,6 +28592,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28185,6 +28637,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28231,6 +28684,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28292,6 +28746,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28336,6 +28791,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28382,6 +28838,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28445,6 +28902,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28564,6 +29022,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28608,6 +29067,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28679,6 +29139,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28740,6 +29201,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28784,6 +29246,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28849,6 +29312,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28895,6 +29359,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -28950,6 +29415,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29069,6 +29535,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29113,6 +29580,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29184,6 +29652,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29245,6 +29714,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29289,6 +29759,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29354,6 +29825,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29400,6 +29872,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29455,6 +29928,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29537,6 +30011,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29619,6 +30094,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29701,6 +30177,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29791,6 +30268,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29889,6 +30367,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -29979,6 +30458,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30077,6 +30557,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30167,6 +30648,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30265,6 +30747,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30355,6 +30838,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30453,6 +30937,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30543,6 +31028,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30641,6 +31127,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30723,6 +31210,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30805,6 +31293,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30895,6 +31384,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -30977,6 +31467,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -31059,6 +31550,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "extensions",
       "Version": "v1beta1",
@@ -31252,6 +31744,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31296,6 +31789,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31367,6 +31861,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31436,6 +31931,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31480,6 +31976,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31545,6 +32042,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31591,6 +32089,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31652,6 +32151,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31696,6 +32196,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31742,6 +32243,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31805,6 +32307,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31887,6 +32390,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -31977,6 +32481,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -32075,6 +32580,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "policy",
       "Version": "v1beta1",
@@ -32260,6 +32766,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32304,6 +32811,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32375,6 +32883,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32420,6 +32929,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32464,6 +32974,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32529,6 +33040,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32575,6 +33087,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32667,6 +33180,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32711,6 +33225,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32782,6 +33297,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32827,6 +33343,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32871,6 +33388,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32936,6 +33454,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -32982,6 +33501,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33074,6 +33594,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33118,6 +33639,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33189,6 +33711,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33242,6 +33765,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33286,6 +33810,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33351,6 +33876,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33397,6 +33923,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33497,6 +34024,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33541,6 +34069,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33612,6 +34141,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33665,6 +34195,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33709,6 +34240,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33774,6 +34306,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33820,6 +34353,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33883,6 +34417,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -33965,6 +34500,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34047,6 +34583,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34129,6 +34666,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34219,6 +34757,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34301,6 +34840,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34391,6 +34931,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34481,6 +35022,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34579,6 +35121,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34669,6 +35212,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34767,6 +35311,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -34849,6 +35394,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1alpha1",
@@ -35001,6 +35547,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35045,6 +35592,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35116,6 +35664,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35161,6 +35710,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35205,6 +35755,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35270,6 +35821,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35316,6 +35868,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35408,6 +35961,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35452,6 +36006,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35523,6 +36078,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35568,6 +36124,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35612,6 +36169,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35677,6 +36235,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35723,6 +36282,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35815,6 +36375,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35859,6 +36420,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35930,6 +36492,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -35983,6 +36546,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36027,6 +36591,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36092,6 +36657,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36138,6 +36704,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36238,6 +36805,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36282,6 +36850,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36353,6 +36922,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36406,6 +36976,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36450,6 +37021,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36515,6 +37087,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36561,6 +37134,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36624,6 +37198,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36706,6 +37281,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36788,6 +37364,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36870,6 +37447,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -36960,6 +37538,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -37042,6 +37621,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -37132,6 +37712,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -37222,6 +37803,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -37320,6 +37902,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -37410,6 +37993,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -37508,6 +38092,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -37590,6 +38175,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "rbac.authorization.k8s.io",
       "Version": "v1beta1",
@@ -37775,6 +38361,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -37819,6 +38406,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -37890,6 +38478,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -37959,6 +38548,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -38003,6 +38593,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -38068,6 +38659,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -38114,6 +38706,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -38177,6 +38770,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -38259,6 +38853,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -38349,6 +38944,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -38447,6 +39043,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "settings.k8s.io",
       "Version": "v1alpha1",
@@ -38632,6 +39229,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -38676,6 +39274,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -38747,6 +39346,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -38808,6 +39408,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -38852,6 +39453,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -38917,6 +39519,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -38963,6 +39566,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -39018,6 +39622,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -39100,6 +39705,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1",
@@ -39260,6 +39866,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "LIST",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
@@ -39304,6 +39911,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "POST",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
@@ -39375,6 +39983,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETECOLLECTION",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
@@ -39436,6 +40045,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "GET",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
@@ -39480,6 +40090,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PUT",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
@@ -39545,6 +40156,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "DELETE",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
@@ -39591,6 +40203,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "PATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
@@ -39646,6 +40259,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCHLIST",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
@@ -39728,6 +40342,7 @@
        "description": "Unauthorized"
       }
      },
+     "x-kuberentes-action": "WATCH",
      "x-kuberentes-group-version-kind": {
       "Group": "storage.k8s.io",
       "Version": "v1beta1",
