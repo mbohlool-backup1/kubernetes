@@ -23,7 +23,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"k8s.io/apimachinery/pkg/runtime/schema"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/kubernetes/pkg/kubectl/cmd/util/openapi"
 )
 
@@ -37,11 +37,12 @@ var _ = Describe("Reading apps/v1beta1/Deployment from openAPIData", func() {
 	})
 
 	deploymentName := "io.k8s.kubernetes.pkg.apis.apps.v1beta1.Deployment"
-	gvk := schema.GroupVersionKind{
+	gvk := metav1.GroupVersionKind{
 		Kind:    "Deployment",
 		Version: "v1beta1",
 		Group:   "apps",
 	}
+
 
 	It("should find the name by its GroupVersionKind", func() {
 		name, found := instance.GroupVersionKindToName[gvk]
@@ -126,7 +127,7 @@ var _ = Describe("Reading apps/v1beta1/DeploymentStatus from openAPIData", func(
 	})
 
 	It("should not find the definition GroupVersionKind", func() {
-		Expect(definition.GroupVersionKind).To(Equal(schema.GroupVersionKind{}))
+		Expect(definition.GroupVersionKind).To(Equal(metav1.GroupVersionKind{}))
 	})
 
 	It("should not find the definition GroupVersionKind extensions", func() {
@@ -178,7 +179,7 @@ var _ = Describe("Reading apps/v1beta1/DeploymentSpec from openAPIData", func() 
 	})
 
 	It("should not find the definition GroupVersionKind", func() {
-		Expect(definition.GroupVersionKind).To(Equal(schema.GroupVersionKind{}))
+		Expect(definition.GroupVersionKind).To(Equal(metav1.GroupVersionKind{}))
 	})
 
 	It("should not find the definition GroupVersionKind extensions", func() {
@@ -216,7 +217,7 @@ var _ = Describe("Reading v1/ObjectMeta from openAPIData", func() {
 	})
 
 	It("should not find the definition GroupVersionKind", func() {
-		Expect(definition.GroupVersionKind).To(Equal(schema.GroupVersionKind{}))
+		Expect(definition.GroupVersionKind).To(Equal(metav1.GroupVersionKind{}))
 	})
 
 	It("should not find the definition GroupVersionKind extensions", func() {
@@ -285,7 +286,7 @@ var _ = Describe("Reading v1/NodeStatus from openAPIData", func() {
 	})
 
 	It("should not find the definition GroupVersionKind", func() {
-		Expect(definition.GroupVersionKind).To(Equal(schema.GroupVersionKind{}))
+		Expect(definition.GroupVersionKind).To(Equal(metav1.GroupVersionKind{}))
 	})
 
 	It("should not find the definition GroupVersionKind extensions", func() {

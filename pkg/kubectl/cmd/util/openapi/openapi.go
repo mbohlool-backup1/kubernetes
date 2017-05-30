@@ -23,7 +23,7 @@ import (
 	"github.com/go-openapi/spec"
 	"github.com/golang/glog"
 
-	"k8s.io/apimachinery/pkg/runtime/schema"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
 )
 
@@ -54,13 +54,13 @@ const Array = "array"
 // Fields are public for binary serialization (private fields don't get serialized)
 type Resources struct {
 	// GroupVersionKindToName maps GroupVersionKinds to Type names
-	GroupVersionKindToName map[schema.GroupVersionKind]string
+	GroupVersionKindToName map[metav1.GroupVersionKind]string
 	// NameToDefinition maps Type names to TypeDefinitions
 	NameToDefinition map[string]Kind
 }
 
 // LookupResource returns the Kind for the specified groupVersionKind
-func (r Resources) LookupResource(groupVersionKind schema.GroupVersionKind) (Kind, bool) {
+func (r Resources) LookupResource(groupVersionKind metav1.GroupVersionKind) (Kind, bool) {
 	name, found := r.GroupVersionKindToName[groupVersionKind]
 	if !found {
 		return Kind{}, false
@@ -88,7 +88,7 @@ type Kind struct {
 	// and is present for all resources.
 	// Empty for non-resource Kinds (e.g. those without APIs).
 	// e.g. "Group": "apps", "Version": "v1beta1", "Kind": "Deployment"
-	GroupVersionKind schema.GroupVersionKind
+	GroupVersionKind metav1.GroupVersionKind
 
 	// Present only for definitions that represent primitive types with additional
 	// semantic meaning beyond just string, integer, boolean - e.g.
@@ -136,7 +136,7 @@ type Type struct {
 // NewOpenAPIData parses the resource definitions in openapi data by groupversionkind and name
 func NewOpenAPIData(s *spec.Swagger) (*Resources, error) {
 	o := &Resources{
-		GroupVersionKindToName: map[schema.GroupVersionKind]string{},
+		GroupVersionKindToName: map[metav1.GroupVersionKind]string{},
 		NameToDefinition:       map[string]Kind{},
 	}
 	// Parse and index definitions by name
@@ -343,8 +343,8 @@ func (o *Resources) nameForDefinitionField(s spec.Schema) string {
 // extensions
 // Expected format for s.Extensions: map[string][]map[string]string
 // map[x-kubernetes-group-version-kind:[map[Group:authentication.k8s.io Version:v1 Kind:TokenReview]]]
-func (o *Resources) getGroupVersionKind(s spec.Schema) (schema.GroupVersionKind, error) {
-	empty := schema.GroupVersionKind{}
+func (o *Resources) getGroupVersionKind(s spec.Schema) (metav1.GroupVersionKind, error) {
+	empty := metav1.GroupVersionKind{}
 
 	// Get the extensions
 	extList, f := s.Extensions[groupVersionKindExtensionKey]
@@ -370,20 +370,20 @@ func (o *Resources) getGroupVersionKind(s spec.Schema) (schema.GroupVersionKind,
 	if !ok {
 		return empty, fmt.Errorf("%s extension has unexpected type %T in %s", groupVersionKindExtensionKey, gvk, s.Extensions)
 	}
-	group, ok := gvkMap["Group"].(string)
+	group, ok := gvkMap["group"].(string)
 	if !ok {
 		return empty, fmt.Errorf("%s extension missing Group: %v", groupVersionKindExtensionKey, gvkMap)
 	}
-	version, ok := gvkMap["Version"].(string)
+	version, ok := gvkMap["version"].(string)
 	if !ok {
 		return empty, fmt.Errorf("%s extension missing Version: %v", groupVersionKindExtensionKey, gvkMap)
 	}
-	kind, ok := gvkMap["Kind"].(string)
+	kind, ok := gvkMap["kind"].(string)
 	if !ok {
 		return empty, fmt.Errorf("%s extension missing Kind: %v", groupVersionKindExtensionKey, gvkMap)
 	}
 
-	return schema.GroupVersionKind{
+	return metav1.GroupVersionKind{
 		Group:   group,
 		Version: version,
 		Kind:    kind,
