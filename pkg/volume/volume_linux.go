@@ -24,8 +24,6 @@ import (
 
 	"os"
 
-	"k8s.io/apimachinery/pkg/types"
-
 	"github.com/golang/glog"
 )
 

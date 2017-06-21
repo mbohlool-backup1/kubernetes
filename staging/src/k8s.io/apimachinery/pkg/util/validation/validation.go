@@ -22,8 +22,6 @@ import (
 	"net"
 	"regexp"
 	"strings"
-
-	"k8s.io/apimachinery/pkg/types"
 )
 
 const qnameCharFmt string = "[A-Za-z0-9]"
