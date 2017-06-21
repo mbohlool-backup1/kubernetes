@@ -50,8 +50,8 @@ func TestNonRootGenerate(t *testing.T) {
 }
 
 func TestNonRootValidate(t *testing.T) {
-	goodUID := types.UnixUserID(1)
-	badUID := types.UnixUserID(0)
+	goodUID := int64(1)
+	badUID := int64(0)
 	untrue := false
 	unfalse := true
 	s, err := NewRunAsNonRoot(&extensions.RunAsUserStrategyOptions{})

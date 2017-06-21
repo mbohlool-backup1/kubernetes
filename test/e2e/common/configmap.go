@@ -523,8 +523,8 @@ func newEnvFromConfigMap(f *framework.Framework, name string) *v1.ConfigMap {
 }
 
 func doConfigMapE2EWithoutMappings(f *framework.Framework, uid, fsGroup int64, defaultMode *int32) {
-	userID := types.UnixUserID(uid)
-	groupID := types.UnixGroupID(fsGroup)
+	userID := int64(uid)
+	groupID := int64(fsGroup)
 
 	var (
 		name            = "configmap-test-volume-" + string(uuid.NewUUID())
@@ -602,8 +602,8 @@ func doConfigMapE2EWithoutMappings(f *framework.Framework, uid, fsGroup int64, d
 }
 
 func doConfigMapE2EWithMappings(f *framework.Framework, uid, fsGroup int64, itemMode *int32) {
-	userID := types.UnixUserID(uid)
-	groupID := types.UnixGroupID(fsGroup)
+	userID := int64(uid)
+	groupID := int64(fsGroup)
 
 	var (
 		name            = "configmap-test-volume-map-" + string(uuid.NewUUID())

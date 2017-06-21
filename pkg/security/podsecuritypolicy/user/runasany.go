@@ -34,7 +34,7 @@ func NewRunAsAny(options *extensions.RunAsUserStrategyOptions) (RunAsUserStrateg
 }
 
 // Generate creates the uid based on policy rules.
-func (s *runAsAny) Generate(pod *api.Pod, container *api.Container) (*types.UnixUserID, error) {
+func (s *runAsAny) Generate(pod *api.Pod, container *api.Container) (*int64, error) {
 	return nil, nil
 }
 

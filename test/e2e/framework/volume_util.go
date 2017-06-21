@@ -243,7 +243,7 @@ func VolumeTestCleanup(f *Framework, config VolumeTestConfig) {
 // and check that the pod sees expected data, e.g. from the server pod.
 // Multiple VolumeTests can be specified to mount multiple volumes to a single
 // pod.
-func TestVolumeClient(client clientset.Interface, config VolumeTestConfig, fsGroup *types.UnixGroupID, tests []VolumeTest) {
+func TestVolumeClient(client clientset.Interface, config VolumeTestConfig, fsGroup *int64, tests []VolumeTest) {
 	By(fmt.Sprint("starting ", config.Prefix, " client"))
 	clientPod := &v1.Pod{
 		TypeMeta: metav1.TypeMeta{

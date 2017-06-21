@@ -130,8 +130,8 @@ while true; do sleep 1; done
 				}
 			})
 
-			rootUser := types.UnixUserID(0)
-			nonRootUser := types.UnixUserID(10000)
+			rootUser := int64(0)
+			nonRootUser := int64(10000)
 			for _, testCase := range []struct {
 				name      string
 				container v1.Container

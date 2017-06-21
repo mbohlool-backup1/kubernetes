@@ -85,8 +85,8 @@ func TestValidate(t *testing.T) {
 		},
 	}
 
-	validID := types.UnixUserID(15)
-	invalidID := types.UnixUserID(21)
+	validID := int64(15)
+	invalidID := int64(21)
 
 	tests := map[string]struct {
 		container   *api.Container

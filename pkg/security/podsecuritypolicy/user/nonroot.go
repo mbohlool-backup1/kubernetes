@@ -35,7 +35,7 @@ func NewRunAsNonRoot(options *extensions.RunAsUserStrategyOptions) (RunAsUserStr
 
 // Generate creates the uid based on policy rules.  This strategy does return a UID.  It assumes
 // that the user will specify a UID or the container image specifies a UID.
-func (s *nonRoot) Generate(pod *api.Pod, container *api.Container) (*types.UnixUserID, error) {
+func (s *nonRoot) Generate(pod *api.Pod, container *api.Container) (*int64, error) {
 	return nil, nil
 }
 

@@ -45,7 +45,7 @@ func TestVerifyRunAsNonRoot(t *testing.T) {
 		},
 	}
 
-	rootUser := types.UnixUserID(0)
+	rootUser := int64(0)
 	runAsNonRootTrue := true
 	runAsNonRootFalse := false
 	imageRootUser := int64(0)

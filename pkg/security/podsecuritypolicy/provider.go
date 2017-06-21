@@ -195,7 +195,7 @@ func (s *simpleProvider) ValidatePodSecurityContext(pod *api.Pod, fldPath *field
 		return allErrs
 	}
 
-	fsGroups := []types.UnixGroupID{}
+	fsGroups := []int64{}
 	if pod.Spec.SecurityContext.FSGroup != nil {
 		fsGroups = append(fsGroups, *pod.Spec.SecurityContext.FSGroup)
 	}

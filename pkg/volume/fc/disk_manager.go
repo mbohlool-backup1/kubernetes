@@ -35,7 +35,7 @@ type diskManager interface {
 }
 
 // utility to mount a disk based filesystem
-func diskSetUp(manager diskManager, b fcDiskMounter, volPath string, mounter mount.Interface, fsGroup *types.UnixGroupID) error {
+func diskSetUp(manager diskManager, b fcDiskMounter, volPath string, mounter mount.Interface, fsGroup *int64) error {
 	globalPDPath := manager.MakeGlobalPDName(*b.fcDisk)
 	// TODO: handle failed mounts here.
 	noMnt, err := mounter.IsLikelyNotMountPoint(volPath)
