@@ -134,7 +134,7 @@ func TestCreateContainerSecurityContextNonmutating(t *testing.T) {
 
 		// Create a PSP with strategies that will populate a blank security context
 		createPSP := func() *extensions.PodSecurityPolicy {
-			uid := types.UnixUserID(1)
+			uid := int64(1)
 			return &extensions.PodSecurityPolicy{
 				ObjectMeta: metav1.ObjectMeta{
 					Name: "psp-sa",
@@ -206,7 +206,7 @@ func TestValidatePodSecurityContextFailures(t *testing.T) {
 	failHostIPCPod.Spec.SecurityContext.HostIPC = true
 
 	failSupplementalGroupPod := defaultPod()
-	failSupplementalGroupPod.Spec.SecurityContext.SupplementalGroups = []types.UnixGroupID{999}
+	failSupplementalGroupPod.Spec.SecurityContext.SupplementalGroups = []int64{999}
 	failSupplementalGroupPSP := defaultPSP()
 	failSupplementalGroupPSP.Spec.SupplementalGroups = extensions.SupplementalGroupsStrategyOptions{
 		Rule: extensions.SupplementalGroupsStrategyMustRunAs,
@@ -216,7 +216,7 @@ func TestValidatePodSecurityContextFailures(t *testing.T) {
 	}
 
 	failFSGroupPod := defaultPod()
-	fsGroup := types.UnixGroupID(999)
+	fsGroup := int64(999)
 	failFSGroupPod.Spec.SecurityContext.FSGroup = &fsGroup
 	failFSGroupPSP := defaultPSP()
 	failFSGroupPSP.Spec.FSGroup = extensions.FSGroupStrategyOptions{
@@ -383,8 +383,8 @@ func TestValidatePodSecurityContextFailures(t *testing.T) {
 func TestValidateContainerSecurityContextFailures(t *testing.T) {
 	// fail user strat
 	failUserPSP := defaultPSP()
-	uid := types.UnixUserID(999)
-	badUID := types.UnixUserID(1)
+	uid := int64(999)
+	badUID := int64(1)
 	failUserPSP.Spec.RunAsUser = extensions.RunAsUserStrategyOptions{
 		Rule:   extensions.RunAsUserStrategyMustRunAs,
 		Ranges: []extensions.UserIDRange{{Min: uid, Max: uid}},
@@ -547,7 +547,7 @@ func TestValidatePodSecurityContextSuccess(t *testing.T) {
 		},
 	}
 	supGroupPod := defaultPod()
-	supGroupPod.Spec.SecurityContext.SupplementalGroups = []types.UnixGroupID{3}
+	supGroupPod.Spec.SecurityContext.SupplementalGroups = []int64{3}
 
 	fsGroupPSP := defaultPSP()
 	fsGroupPSP.Spec.FSGroup = extensions.FSGroupStrategyOptions{
@@ -557,7 +557,7 @@ func TestValidatePodSecurityContextSuccess(t *testing.T) {
 		},
 	}
 	fsGroupPod := defaultPod()
-	fsGroup := types.UnixGroupID(3)
+	fsGroup := int64(3)
 	fsGroupPod.Spec.SecurityContext.FSGroup = &fsGroup
 
 	seLinuxPod := defaultPod()
@@ -680,7 +680,7 @@ func TestValidateContainerSecurityContextSuccess(t *testing.T) {
 
 	// success user strat
 	userPSP := defaultPSP()
-	uid := types.UnixUserID(999)
+	uid := int64(999)
 	userPSP.Spec.RunAsUser = extensions.RunAsUserStrategyOptions{
 		Rule:   extensions.RunAsUserStrategyMustRunAs,
 		Ranges: []extensions.UserIDRange{{Min: uid, Max: uid}},

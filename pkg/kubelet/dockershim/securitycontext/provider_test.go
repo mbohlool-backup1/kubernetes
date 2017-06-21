@@ -29,8 +29,8 @@ import (
 )
 
 func TestModifyContainerConfig(t *testing.T) {
-	userID := types.UnixUserID(123)
-	overrideUserID := types.UnixUserID(321)
+	userID := int64(123)
+	overrideUserID := int64(321)
 
 	cases := []struct {
 		name     string
@@ -177,7 +177,7 @@ func TestModifyHostConfig(t *testing.T) {
 
 func TestModifyHostConfigPodSecurityContext(t *testing.T) {
 	supplementalGroupsSC := &v1.PodSecurityContext{}
-	supplementalGroupsSC.SupplementalGroups = []types.UnixGroupID{2222}
+	supplementalGroupsSC.SupplementalGroups = []int64{2222}
 	supplementalGroupHC := fullValidHostConfig()
 	supplementalGroupHC.GroupAdd = []string{"2222"}
 	fsGroupHC := fullValidHostConfig()
@@ -186,7 +186,7 @@ func TestModifyHostConfigPodSecurityContext(t *testing.T) {
 	extraSupplementalGroupHC.GroupAdd = []string{"1234"}
 	bothHC := fullValidHostConfig()
 	bothHC.GroupAdd = []string{"2222", "1234"}
-	fsGroup := types.UnixGroupID(1234)
+	fsGroup := int64(1234)
 	extraSupplementalGroup := []int64{1234}
 
 	testCases := map[string]struct {
@@ -211,7 +211,7 @@ func TestModifyHostConfigPodSecurityContext(t *testing.T) {
 		},
 		"FSGroup + SupplementalGroups": {
 			securityContext: &v1.PodSecurityContext{
-				SupplementalGroups: []types.UnixGroupID{2222},
+				SupplementalGroups: []int64{2222},
 				FSGroup:            &fsGroup,
 			},
 			expected:                bothHC,

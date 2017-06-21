@@ -20,6 +20,6 @@ package volume
 
 import "k8s.io/apimachinery/pkg/types"
 
-func SetVolumeOwnership(mounter Mounter, fsGroup *types.UnixGroupID) error {
+func SetVolumeOwnership(mounter Mounter, fsGroup *int64) error {
 	return nil
 }

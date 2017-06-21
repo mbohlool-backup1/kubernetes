@@ -227,7 +227,7 @@ func TestGenerateContainerConfig(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Equal(t, expectedConfig, containerConfig, "generate container config for kubelet runtime v1.")
 
-	runAsUser := types.UnixUserID(0)
+	runAsUser := int64(0)
 	runAsNonRootTrue := true
 	podWithContainerSecurityContext := &v1.Pod{
 		ObjectMeta: metav1.ObjectMeta{
