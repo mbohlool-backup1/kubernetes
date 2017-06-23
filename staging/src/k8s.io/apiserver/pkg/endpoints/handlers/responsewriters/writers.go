@@ -17,11 +17,14 @@ limitations under the License.
 package responsewriters
 
 import (
+	"bytes"
+	"crypto/sha512"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
 	"strconv"
+	"time"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
@@ -32,6 +35,7 @@ import (
 	"k8s.io/apiserver/pkg/registry/rest"
 	"k8s.io/apiserver/pkg/util/flushwriter"
 	"k8s.io/apiserver/pkg/util/wsstream"
+	"bufio"
 )
 
 // WriteObject renders a returned runtime.Object to the response as a stream or an encoded object. If the object
@@ -88,10 +92,20 @@ func StreamObject(ctx request.Context, statusCode int, gv schema.GroupVersion, s
 // The context is optional and can be nil.
 func SerializeObject(mediaType string, encoder runtime.Encoder, w http.ResponseWriter, req *http.Request, statusCode int, object runtime.Object) {
 	w.Header().Set("Content-Type", mediaType)
-	w.WriteHeader(statusCode)
 
-	if err := encoder.Encode(object, w); err != nil {
-		errorJSONFatal(err, encoder, w)
+	if statusCode == http.StatusOK {
+		var buff bytes.Buffer
+		if err := encoder.Encode(object, bufio.NewWriter(&buff)); err != nil {
+			errorJSONFatal(err, encoder, w)
+		}
+		output := buff.Bytes()
+		w.Header().Set("Etag", fmt.Sprintf("\"%X\"", sha512.Sum512(output)))
+		http.ServeContent(w, req, "", time.Unix(0, 0), bytes.NewReader(output))
+	} else {
+		w.WriteHeader(statusCode)
+		if err := encoder.Encode(object, w); err != nil {
+			errorJSONFatal(err, encoder, w)
+		}
 	}
 }
 
@@ -164,4 +178,17 @@ func WriteRawJSON(statusCode int, object interface{}, w http.ResponseWriter) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(statusCode)
 	w.Write(output)
+}
+
+// WriteRawJSON writes a non-API object in JSON with eTag support.
+func WriteRawJSONWithETag(object interface{}, w http.ResponseWriter, r *http.Request) {
+	output, err := json.MarshalIndent(object, "", "  ")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	w.Header().Set("Etag", fmt.Sprintf("\"%X\"", sha512.Sum512(output)))
+	w.Header().Set("Content-Type", "application/json")
+	// ServeContent will take care of caching using eTag.
+	http.ServeContent(w, r, "", time.Unix(0, 0), bytes.NewReader(output))
 }
