@@ -67,11 +67,17 @@ type OpenAPIService struct {
 	specPbGzETag  string
 }
 
+func init() {
+	mime.AddExtensionType(".json", mimeJson)
+	mime.AddExtensionType(".pb-v1", mimePb)
+	mime.AddExtensionType(".gz", mimePbGz)
+}
+
 func computeETag(data []byte) string {
 	return fmt.Sprintf("\"%X\"", sha512.Sum512(data))
 }
 
-// BuildAndRegisterOpenAPIService first build and spec and then registers a handler to provides access to it.
+// BuildAndRegisterOpenAPIService builds the spec and registers a handler to provides access to it.
 // Use this method if your OpenAPI spec is static. If you want to update the spec, use BuildOpenAPISpec then RegisterOpenAPIService.
 func BuildAndRegisterOpenAPIService(servePath string, webServices []*restful.WebService, config *common.Config, handler common.PathHandler) (*OpenAPIService, error) {
 	spec, err := builder.BuildOpenAPISpec(webServices, config)
@@ -86,7 +92,7 @@ func BuildAndRegisterOpenAPIService(servePath string, webServices []*restful.Web
 // json file and will also serve .pb and .gz files.
 func RegisterOpenAPIService(openapiSpec *spec.Swagger, servePath string, handler common.PathHandler) (*OpenAPIService, error) {
 	if !strings.HasSuffix(servePath, jsonExt) {
-		return nil, fmt.Errorf("serving path must ends with \"%s\"", jsonExt)
+		return nil, fmt.Errorf("serving path must end with \"%s\"", jsonExt)
 	}
 
 	servePathBase := strings.TrimSuffix(servePath, jsonExt)
@@ -95,10 +101,6 @@ func RegisterOpenAPIService(openapiSpec *spec.Swagger, servePath string, handler
 	if err := o.UpdateSpec(openapiSpec); err != nil {
 		return nil, err
 	}
-
-	mime.AddExtensionType(".json", mimeJson)
-	mime.AddExtensionType(".pb-v1", mimePb)
-	mime.AddExtensionType(".gz", mimePbGz)
 
 	type fileInfo struct {
 		ext            string
