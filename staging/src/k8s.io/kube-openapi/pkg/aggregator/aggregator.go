@@ -19,11 +19,10 @@ package aggregator
 import (
 	"encoding/json"
 	"fmt"
+	"reflect"
 	"strings"
 
 	"github.com/go-openapi/spec"
-
-	"reflect"
 
 	"k8s.io/kube-openapi/pkg/util"
 )
@@ -230,8 +229,8 @@ func MergeSpecs(dest, source *spec.Swagger) error {
 	}
 	renames := []Rename{}
 	for k, v := range sourceCopy.Definitions {
-		v2, found := dest.Definitions[k]
 		if usedNames[k] {
+			v2, found := dest.Definitions[k]
 			// Reuse model iff they are exactly the same.
 			if found && reflect.DeepEqual(v, v2) {
 				continue
