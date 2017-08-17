@@ -17,6 +17,7 @@ limitations under the License.
 package apiserver
 
 import (
+	"crypto/sha512"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -67,7 +68,7 @@ func buildAndRegisterOpenAPIAggregator(delegateHandler http.Handler, webServices
 		contextMapper: contextMapper,
 	}
 
-	delegateSpec, err := s.downloadOpenAPISpec(delegateHandler)
+	delegateSpec, _, err := s.downloadOpenAPISpec(delegateHandler, "")
 	if err != nil {
 		return nil, err
 	}
@@ -193,9 +194,10 @@ func (s *openAPIAggregator) updateOpenAPISpec() error {
 
 // inMemoryResponseWriter is a http.Writer that keep the response in memory.
 type inMemoryResponseWriter struct {
-	header   http.Header
-	respCode int
-	data     []byte
+	writeHeaderCalled bool
+	header            http.Header
+	respCode          int
+	data              []byte
 }
 
 func newInMemoryResponseWriter() *inMemoryResponseWriter {
@@ -207,10 +209,14 @@ func (r *inMemoryResponseWriter) Header() http.Header {
 }
 
 func (r *inMemoryResponseWriter) WriteHeader(code int) {
+	r.writeHeaderCalled = true
 	r.respCode = code
 }
 
 func (r *inMemoryResponseWriter) Write(in []byte) (int, error) {
+	if !r.writeHeaderCalled {
+		r.WriteHeader(http.StatusOK)
+	}
 	r.data = append(r.data, in...)
 	return len(in), nil
 }
@@ -236,27 +242,36 @@ func (s *openAPIAggregator) handlerWithUser(handler http.Handler, info user.Info
 }
 
 // downloadOpenAPISpec downloads openAPI spec from /swagger.json endpoint of the given handler.
-func (s *openAPIAggregator) downloadOpenAPISpec(handler http.Handler) (*spec.Swagger, error) {
+func (s *openAPIAggregator) downloadOpenAPISpec(handler http.Handler, etag string) (*spec.Swagger, string, error) {
 	handler = s.handlerWithUser(handler, &user.DefaultInfo{Name: aggregatorUser})
 	handler = request.WithRequestContext(handler, s.contextMapper)
 	handler = http.TimeoutHandler(handler, specDownloadTimeout, "request timed out")
 
 	req, err := http.NewRequest("GET", "/swagger.json", nil)
 	if err != nil {
-		return nil, err
+		return nil, "", err
+	}
+	if len(etag) > 0 {
+		req.Header.Add("If-None-Match", etag)
 	}
 	writer := newInMemoryResponseWriter()
 	handler.ServeHTTP(writer, req)
 
 	switch writer.respCode {
+	case http.StatusNotModified:
+		return nil, etag, nil
 	case http.StatusOK:
 		openApiSpec := &spec.Swagger{}
 		if err := json.Unmarshal(writer.data, openApiSpec); err != nil {
-			return nil, err
+			return nil, "", err
 		}
-		return openApiSpec, nil
+		etag = writer.Header().Get("Etag")
+		if len (etag) == 0 {
+			etag = fmt.Sprintf("\"%X\"", sha512.Sum512(writer.data))
+		}
+		return openApiSpec, etag, nil
 	default:
-		return nil, fmt.Errorf("failed to retrive openAPI spec, http error: %s", writer.String())
+		return nil, "", fmt.Errorf("failed to retrive openAPI spec, http error: %s", writer.String())
 	}
 }
 
@@ -268,7 +283,7 @@ func (s *openAPIAggregator) loadApiServiceSpec(handler http.Handler, apiService 
 		return nil
 	}
 
-	openApiSpec, err := s.downloadOpenAPISpec(handler)
+	openApiSpec, _, err := s.downloadOpenAPISpec(handler, "")
 	if err != nil {
 		return err
 	}

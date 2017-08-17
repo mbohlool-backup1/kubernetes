@@ -17,11 +17,13 @@ limitations under the License.
 package apiserver
 
 import (
+	"net/http"
 	"reflect"
 	"testing"
 
 	"github.com/go-openapi/spec"
 
+	"k8s.io/apiserver/pkg/endpoints/request"
 	"k8s.io/kube-aggregator/pkg/apis/apiregistration"
 )
 
@@ -65,4 +67,65 @@ func TestApiServiceSort(t *testing.T) {
 	}
 	sortByPriority(list)
 	assertSortedServices(t, list, []string{"FirstService", "FirstServiceInternal", "SecondService", "ThirdService"})
+}
+
+type handlerTest struct {
+	etag string
+	data []byte
+}
+
+var _ http.Handler = handlerTest{}
+
+func (h handlerTest) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	if len(h.etag) > 0 {
+		w.Header().Add("Etag", h.etag)
+	}
+	ifNoneMatches := r.Header["If-None-Match"]
+	for _, match := range ifNoneMatches {
+		if match == h.etag {
+			w.WriteHeader(http.StatusNotModified)
+			return
+		}
+	}
+	w.Write(h.data)
+}
+
+func assertDownloadedSpec(t *testing.T, actualSpec *spec.Swagger, actualEtag string, err error,
+	expectedSpecId string, expectedEtag string) {
+	if err != nil {
+		t.Errorf("downloadOpenAPISpec failed : %s", err)
+	}
+	if expectedSpecId == "" && actualSpec != nil {
+		t.Errorf("expected Not Modified, actual ID %s", actualSpec.ID)
+	}
+	if actualSpec != nil && actualSpec.ID != expectedSpecId {
+		t.Errorf("expected ID %s, actual ID %s", expectedSpecId, actualSpec.ID)
+	}
+	if actualEtag != expectedEtag {
+		t.Errorf("expected ETag '%s', actual ETag '%s'", expectedEtag, actualEtag)
+	}
+}
+
+func TestDownloadOpenAPISpec(t *testing.T) {
+
+	s := openAPIAggregator{contextMapper: request.NewRequestContextMapper()}
+
+	// Test with no eTag
+	actualSpec, actualEtag, err := s.downloadOpenAPISpec(handlerTest{data: []byte("{\"id\": \"test\"}")}, "")
+	assertDownloadedSpec(t, actualSpec, actualEtag, err, "test", "")
+
+	// Test with eTag
+	actualSpec, actualEtag, err = s.downloadOpenAPISpec(
+		handlerTest{data: []byte("{\"id\": \"test\"}"), etag: "etag_test"}, "")
+	assertDownloadedSpec(t, actualSpec, actualEtag, err, "test", "etag_test")
+
+	// Test not modified
+	actualSpec, actualEtag, err = s.downloadOpenAPISpec(
+		handlerTest{data: []byte("{\"id\": \"test\"}"), etag: "etag_test"}, "etag_test")
+	assertDownloadedSpec(t, actualSpec, actualEtag, err, "", "etag_test")
+
+	// Test different eTags
+	actualSpec, actualEtag, err = s.downloadOpenAPISpec(
+		handlerTest{data: []byte("{\"id\": \"test\"}"), etag: "etag_test1"}, "etag_test2")
+	assertDownloadedSpec(t, actualSpec, actualEtag, err, "test", "etag_test1")
 }
