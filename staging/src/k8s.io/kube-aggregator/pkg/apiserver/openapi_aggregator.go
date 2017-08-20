@@ -34,12 +34,13 @@ import (
 	"k8s.io/kube-openapi/pkg/builder"
 	"k8s.io/kube-openapi/pkg/common"
 	"k8s.io/kube-openapi/pkg/handler"
+	"k8s.io/apiserver/pkg/server"
 )
 
 const (
-	aggregatorUser      = "system:aggregator"
-	specDownloadTimeout = 60 * time.Second
-	localDelegateName   = ""
+	aggregatorUser                = "system:aggregator"
+	specDownloadTimeout           = 60 * time.Second
+	localDelegateChainNamePattern = "k8s_internal_local_delegation_chain_%d"
 )
 
 type openAPIAggregator struct {
@@ -66,18 +67,27 @@ func (s *openAPIAggregator) addLocalSpec(spec *spec.Swagger, localHandler http.H
 	}
 }
 
-func buildAndRegisterOpenAPIAggregator(delegateHandler http.Handler, webServices []*restful.WebService, config *common.Config, pathHandler common.PathHandler, contextMapper request.RequestContextMapper) (s *openAPIAggregator, err error) {
+func buildAndRegisterOpenAPIAggregator(delegationTarget server.DelegationTarget, webServices []*restful.WebService,
+	config *common.Config, pathHandler common.PathHandler, contextMapper request.RequestContextMapper) (s *openAPIAggregator, err error) {
 	s = &openAPIAggregator{
 		openAPISpecs:  map[string]*openAPISpecInfo{},
 		contextMapper: contextMapper,
 	}
 	s.openAPIAggregationController = NewOpenAPIAggregationController(s)
 
-	delegateSpec, etag, err := s.downloadOpenAPISpec(delegateHandler, "")
-	if err != nil {
-		return nil, err
+	i := 0
+	for delegate := delegationTarget; delegate != nil; delegate=delegate.Delegate() {
+		handler := delegate.UnprotectedHandler()
+		delegateSpec, etag, err := s.downloadOpenAPISpec(handler, "")
+		if err != nil {
+			return nil, err
+		}
+		if i != 0 {
+			aggregator.FilterSpecByPaths(delegateSpec, []string{"/apis/"})
+		}
+		s.addLocalSpec(delegateSpec, handler, fmt.Sprintf(localDelegateChainNamePattern, i), etag)
+		i++
 	}
-	s.addLocalSpec(delegateSpec, delegateHandler, localDelegateName, etag)
 
 	// Build Aggregator's spec
 	aggregatorOpenAPISpec, err := builder.BuildOpenAPISpec(
@@ -89,6 +99,7 @@ func buildAndRegisterOpenAPIAggregator(delegateHandler http.Handler, webServices
 	// is the source of truth for all non-api endpoints.
 	aggregator.FilterSpecByPaths(aggregatorOpenAPISpec, []string{"/apis/"})
 
+	// Reserving non-name spec for aggregator's Spec.
 	s.addLocalSpec(aggregatorOpenAPISpec, nil, "", "")
 
 	// Build initial spec to serve.
@@ -163,7 +174,8 @@ func sortByPriority(specs []openAPISpecInfo) {
 
 // buildOpenAPISpec aggregates all OpenAPI specs.  It is not thread-safe.
 func (s *openAPIAggregator) buildOpenAPISpec() (specToReturn *spec.Swagger, err error) {
-	localDelegateSpec, exists := s.openAPISpecs[localDelegateName]
+	firstDelegateName := fmt.Sprintf(localDelegateChainNamePattern, 0)
+	localDelegateSpec, exists := s.openAPISpecs[firstDelegateName]
 	if !exists {
 		return nil, fmt.Errorf("localDelegate spec is missing")
 	}
@@ -173,7 +185,7 @@ func (s *openAPIAggregator) buildOpenAPISpec() (specToReturn *spec.Swagger, err 
 	}
 	specs := []openAPISpecInfo{}
 	for serviceName, specInfo := range s.openAPISpecs {
-		if serviceName == localDelegateName {
+		if serviceName == firstDelegateName {
 			continue
 		}
 		specs = append(specs, openAPISpecInfo{specInfo.apiService, specInfo.spec, specInfo.handler, specInfo.etag})
