@@ -19,6 +19,7 @@ package versioning
 import (
 	"io"
 
+	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 )
@@ -179,8 +180,9 @@ func (c *codec) Encode(obj runtime.Object, w io.Writer) error {
 		if !ok {
 			return runtime.NewNotRegisteredGVKErrForTarget(objGVK, c.encodeVersion)
 		}
-		// Only avoid conversion if unstructed is not a list, giving the converter a chance to convert list items.
-		if targetGVK == objGVK && !obj.IsList() {
+		_, isUnstructuredList := obj.(*unstructured.UnstructuredList)
+		// Only avoid conversion if unstructed is not an unstructuredList, giving the converter a chance to convert list items.
+		if targetGVK == objGVK && !isUnstructuredList {
 			return c.encoder.Encode(obj, w)
 		}
 	}
