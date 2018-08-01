@@ -23,10 +23,13 @@ go_test(
     tags = ["integration"],
     deps = [
         "//staging/src/k8s.io/api/autoscaling/v1:go_default_library",
+        "//staging/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions:go_default_library",
         "//staging/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1:go_default_library",
         "//staging/src/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset:go_default_library",
         "//staging/src/k8s.io/apiextensions-apiserver/pkg/cmd/server/options:go_default_library",
         "//staging/src/k8s.io/apiextensions-apiserver/test/integration/fixtures:go_default_library",
+        "//staging/src/k8s.io/apiextensions-apiserver/test/integration/testserver:go_default_library",
+        "//staging/src/k8s.io/apiextensions-apiserver/test/integration/utils:go_default_library",
         "//staging/src/k8s.io/apimachinery/pkg/api/errors:go_default_library",
         "//staging/src/k8s.io/apimachinery/pkg/api/meta:go_default_library",
         "//staging/src/k8s.io/apimachinery/pkg/apis/meta/v1:go_default_library",
@@ -40,6 +43,7 @@ go_test(
         "//staging/src/k8s.io/apimachinery/pkg/util/wait:go_default_library",
         "//staging/src/k8s.io/apimachinery/pkg/watch:go_default_library",
         "//staging/src/k8s.io/apiserver/pkg/endpoints/request:go_default_library",
+        "//staging/src/k8s.io/apiserver/pkg/registry/rest:go_default_library",
         "//staging/src/k8s.io/client-go/dynamic:go_default_library",
         "//staging/src/k8s.io/client-go/rest:go_default_library",
         "//vendor/github.com/coreos/etcd/clientv3:go_default_library",
@@ -61,6 +65,8 @@ filegroup(
     srcs = [
         ":package-srcs",
         "//staging/src/k8s.io/apiextensions-apiserver/test/integration/fixtures:all-srcs",
+        "//staging/src/k8s.io/apiextensions-apiserver/test/integration/testserver:all-srcs",
+        "//staging/src/k8s.io/apiextensions-apiserver/test/integration/utils:all-srcs",
     ],
     tags = ["automanaged"],
 )
