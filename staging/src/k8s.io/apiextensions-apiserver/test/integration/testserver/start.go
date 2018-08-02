@@ -36,6 +36,8 @@ import (
 	genericapiserveroptions "k8s.io/apiserver/pkg/server/options"
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/rest"
+	options2 "k8s.io/apiserver/pkg/server/options"
+	"k8s.io/kubernetes/pkg/apis/abac/v1beta1"
 )
 
 func DefaultServerConfig() (*extensionsapiserver.Config, error) {
@@ -70,6 +72,7 @@ func DefaultServerConfig() (*extensionsapiserver.Config, error) {
 	if err := options.APIEnablement.ApplyTo(&genericConfig.Config, extensionsapiserver.DefaultAPIResourceConfigSource(), extensionsapiserver.Scheme); err != nil {
 		return nil, err
 	}
+
 
 	customResourceDefinitionRESTOptionsGetter := extensionsapiserver.CRDRESTOptionsGetter{
 		StorageConfig:           options.RecommendedOptions.Etcd.StorageConfig,
@@ -135,7 +138,17 @@ func StartServerWithStorage(config *extensionsapiserver.Config) (chan struct{}, 
 		return nil, nil, nil, err
 	}
 
-	customResourceDefinitionStorage := customresourcedefinition.NewREST(apiserver.Scheme, config.Complete().GenericConfig.RESTOptionsGetter)
+	recommendedOptions := options2.NewRecommendedOptions(uuid.New(), apiserver.Codecs.LegacyCodec(v1beta1.SchemeGroupVersion))
+	customResourceDefinitionRESTOptionsGetter := extensionsapiserver.CRDRESTOptionsGetter{
+		StorageConfig:           recommendedOptions.Etcd.StorageConfig,
+		StoragePrefix:           recommendedOptions.Etcd.StorageConfig.Prefix,
+		EnableWatchCache:        recommendedOptions.Etcd.EnableWatchCache,
+		DefaultWatchCacheSize:   recommendedOptions.Etcd.DefaultWatchCacheSize,
+		EnableGarbageCollection: recommendedOptions.Etcd.EnableGarbageCollection,
+		DeleteCollectionWorkers: recommendedOptions.Etcd.DeleteCollectionWorkers,
+	}
+	customResourceDefinitionRESTOptionsGetter.StorageConfig.Codec = unstructured.UnstructuredJSONScheme
+	customResourceDefinitionStorage := customresourcedefinition.NewREST(apiserver.Scheme, customResourceDefinitionRESTOptionsGetter)
 	return stopCh, config.GenericConfig.LoopbackClientConfig, customResourceDefinitionStorage.Store, nil
 }
 

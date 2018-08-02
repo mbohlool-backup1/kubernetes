@@ -25,8 +25,20 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
+type CRDConverterFactory struct {
+	webhookConverterFactory *webhookConverterFactory
+}
+
+func NewCRDConverterFactory() (*CRDConverterFactory, error) {
+	webhookConverterFactory, err := newWebhookConverterFactory()
+	if err != nil {
+		return nil, err
+	}
+	return &CRDConverterFactory{webhookConverterFactory}, nil
+}
+
 // NewCRDConverter returns a new CRD converter based on the conversion settings in crd object.
-func NewCRDConverter(crd *apiextensions.CustomResourceDefinition) (safe, unsafe runtime.ObjectConvertor, err error) {
+func (m *CRDConverterFactory) NewConverter(crd *apiextensions.CustomResourceDefinition) (safe, unsafe runtime.ObjectConvertor, err error) {
 	validVersions := map[schema.GroupVersion]bool{}
 	for _, version := range crd.Spec.Versions {
 		validVersions[schema.GroupVersion{Group: crd.Spec.Group, Version: version.Name}] = true
@@ -46,6 +58,12 @@ func NewCRDConverter(crd *apiextensions.CustomResourceDefinition) (safe, unsafe 
 			delegate: &nopConverter{
 				validVersions: validVersions,
 			},
+		}
+		return &safeConverterWrapper{unsafe}, unsafe, nil
+	case apiextensions.WebhookConverter:
+		unsafe, err := m.webhookConverterFactory.NewWebhookConverter(validVersions, crd)
+		if err != nil {
+			return nil, nil, err
 		}
 		return &safeConverterWrapper{unsafe}, unsafe, nil
 	}

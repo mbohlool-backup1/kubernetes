@@ -97,9 +97,9 @@ func testInvalidConversion(t *testing.T, ns string) {
 	storeWithoutValidation := utils.NewStoreWrapperWithoutValidation(store)
 
 	// Step 1: Creating a CRD with invalid conversion should fail
-	noxuDefinition := testserver.NewMultipleVersionNoxuCRD(scope)
+	noxuDefinition := fixtures.NewMultipleVersionNoxuCRD(scope)
 	noxuDefinition.Spec.Conversion = &apiextensionsv1beta1.CustomResourceConversion{Strategy: "invalid_strategy"}
-	_, err = testserver.CreateNewCustomResourceDefinition(noxuDefinition, apiExtensionClient, dynamicClient)
+	_, err = fixtures.CreateNewCustomResourceDefinition(noxuDefinition, apiExtensionClient, dynamicClient)
 	if err == nil {
 		t.Errorf("validation should fail for %v", noxuDefinition)
 	}
@@ -113,18 +113,18 @@ func testInvalidConversion(t *testing.T, ns string) {
 	internalCRD := &apiextensions.CustomResourceDefinition{}
 	apiextensionsv1beta1.Convert_v1beta1_CustomResourceDefinition_To_apiextensions_CustomResourceDefinition(noxuDefinition, internalCRD, nil)
 
-	_, err = storeWithoutValidation.Create(context.Background(), internalCRD, nil, false)
+	_, err = storeWithoutValidation.Create(context.Background(), internalCRD, nil, &metav1.CreateOptions{})
 	if err != nil {
 		t.Fatal(err)
 	}
 	// wait for the handler to catch up
-	if err = testserver.WaitForAllVersionsExistsInDiscovery(noxuDefinition, apiExtensionClient); err != nil {
+	if err = fixtures.WaitForAllVersionsExistsInDiscovery(noxuDefinition, apiExtensionClient); err != nil {
 		t.Fatal(err)
 	}
 
 	// Step 3: Create a CR should fail as the CRD has invalid conversion strategy
 	noxuResourceClient := newNamespacedCustomResourceVersionedClient(ns, dynamicClient, noxuDefinition, testVersion)
-	_, err = instantiateVersionedCustomResource(t, testserver.NewVersionedNoxuInstance(ns, "foo", testVersion), noxuResourceClient, noxuDefinition, testVersion)
+	_, err = instantiateVersionedCustomResource(t, fixtures.NewVersionedNoxuInstance(ns, "foo", testVersion), noxuResourceClient, noxuDefinition, testVersion)
 	if err == nil {
 		t.Errorf("operation should fail. the conversion strategy is unknown for %v", noxuDefinition)
 	}
@@ -156,7 +156,7 @@ func testInvalidConversion(t *testing.T, ns string) {
 	}
 
 	// Step 6: Create a normal CR should work now
-	createdNoxuInstance, err := instantiateVersionedCustomResource(t, testserver.NewVersionedNoxuInstance(ns, "foo", testVersion), noxuResourceClient, noxuDefinition, testVersion)
+	createdNoxuInstance, err := instantiateVersionedCustomResource(t, fixtures.NewVersionedNoxuInstance(ns, "foo", testVersion), noxuResourceClient, noxuDefinition, testVersion)
 	if err != nil {
 		t.Fatalf("unable to create noxu Instance:%v", err)
 	}
@@ -190,7 +190,7 @@ func testInvalidConversion(t *testing.T, ns string) {
 	// Step 9: Update the CRD and add back the unknown conversion strategy, with disabled validation
 	internalCRD = &apiextensions.CustomResourceDefinition{}
 	apiextensionsv1beta1.Convert_v1beta1_CustomResourceDefinition_To_apiextensions_CustomResourceDefinition(gotNoxuDefinition, internalCRD, nil)
-	_, _, err = storeWithoutValidation.Update(context.Background(), internalCRD.Name, rest.DefaultUpdatedObjectInfo(internalCRD), nil, nil)
+	_, _, err = storeWithoutValidation.Update(context.Background(), internalCRD.Name, rest.DefaultUpdatedObjectInfo(internalCRD), nil, nil, false, &metav1.UpdateOptions{})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -211,7 +211,7 @@ func testInvalidConversion(t *testing.T, ns string) {
 	}
 
 	// Step 11: trying another operation
-	_, err = instantiateVersionedCustomResource(t, testserver.NewVersionedNoxuInstance(ns, "bar", testVersion), noxuResourceClient, noxuDefinition, testVersion)
+	_, err = instantiateVersionedCustomResource(t, fixtures.NewVersionedNoxuInstance(ns, "bar", testVersion), noxuResourceClient, noxuDefinition, testVersion)
 	if err == nil {
 		t.Errorf("operation should fail on invalid conversion strategy")
 	}
@@ -249,9 +249,9 @@ func TestDisabledConversionForVersionedClusterScopedCRD(t *testing.T) {
 	}
 	defer close(stopCh)
 
-	noxuDefinition := testserver.NewMultipleVersionNoxuCRD(apiextensionsv1beta1.ClusterScoped)
+	noxuDefinition := fixtures.NewMultipleVersionNoxuCRD(apiextensionsv1beta1.ClusterScoped)
 	noxuDefinition.Spec.Conversion = &apiextensionsv1beta1.CustomResourceConversion{Strategy: "disable"}
-	noxuDefinition, err = testserver.CreateNewCustomResourceDefinitionWatchUnsafe(noxuDefinition, apiExtensionClient)
+	noxuDefinition, err = fixtures.CreateNewCustomResourceDefinitionWatchUnsafe(noxuDefinition, apiExtensionClient)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -273,7 +273,7 @@ func testVersionedCRDwithDisabledConversion(t *testing.T, ns string, noxuDefinit
 		noxuResourceClients[v.Name] = newNamespacedCustomResourceVersionedClient(ns, dynamicClient, noxuDefinition, v.Name)
 	}
 
-	createdNoxuInstance, err := instantiateVersionedCustomResource(t, testserver.NewVersionedNoxuInstance(ns, "foo", storageVersion), noxuResourceClients[storageVersion], noxuDefinition, storageVersion)
+	createdNoxuInstance, err := instantiateVersionedCustomResource(t, fixtures.NewVersionedNoxuInstance(ns, "foo", storageVersion), noxuResourceClients[storageVersion], noxuDefinition, storageVersion)
 	if err != nil {
 		t.Fatalf("unable to create noxu Instance:%v", err)
 	}

@@ -17,15 +17,18 @@ limitations under the License.
 package v1beta1
 
 import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/api/admissionregistration/v1beta1"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/apimachinery/pkg/types"
 )
 
 type ConversionStrategyType string
 
 const (
 	// NopConverter is a converter that only sets apiversion of the CR and leave everything else unchanged.
-	NopConverter ConversionStrategyType = "no-op"
+	NopConverter     ConversionStrategyType = "no-op"
+	WebhookConverter ConversionStrategyType = "webhook"
 )
 
 // CustomResourceDefinitionSpec describes how a user wants their resource to appear
@@ -289,4 +292,39 @@ type CustomResourceSubresourceScale struct {
 	// subresource will default to the empty string.
 	// +optional
 	LabelSelectorPath *string `json:"labelSelectorPath,omitempty" protobuf:"bytes,3,opt,name=labelSelectorPath"`
+}
+
+// ConversionReview describes a conversion request/response.
+type ConversionReview struct {
+	metav1.TypeMeta `json:",inline"`
+	// Request describes the attributes for the conversion request.
+	// +optional
+	Request *ConversionRequest `json:"request,omitempty" protobuf:"bytes,1,opt,name=request"`
+	// Response describes the attributes for the conversion response.
+	// +optional
+	Response *ConversionResponse `json:"response,omitempty" protobuf:"bytes,2,opt,name=response"`
+}
+
+// ConversionRequest describes a conversion request parameters.
+type ConversionRequest struct {
+	// UID is an identifier for the individual request/response. It allows us to distinguish instances of requests which are
+	// otherwise identical (parallel requests, requests when earlier requests did not modify etc)
+	// The UID is meant to track the round trip (request/response) between the KAS and the WebHook, not the user request.
+	// It is suitable for correlating log entries between the webhook and apiserver, for either auditing or debugging.
+	// +optional
+	UID types.UID `json:"uid,omitempty" protobuf:"bytes,1,opt,name=uid"`
+	// The version to convert given object to. E.g. "stable.example.com/v1"
+	APIVersion string `json:"apiVersion" protobuf:"bytes,2,name=apiVersion"`
+	// Object is the CRD object to be converted.
+	Object runtime.RawExtension `json:"object" protobuf:"bytes,3,name=object"`
+}
+
+// ConversionResponse describes a conversion response.
+type ConversionResponse struct {
+	// UID is an identifier for the individual request/response.
+	// This should be copied over from the corresponding AdmissionRequest.
+	// +optional
+	UID types.UID `json:"uid,omitempty" protobuf:"bytes,1,opt,name=uid"`
+	// ConvertedObject is the converted version of request.Object.
+	ConvertedObject runtime.RawExtension `json:"convertedObject" protobuf:"bytes,2,name=convertedObject"`
 }

@@ -19,13 +19,16 @@ package apiextensions
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/kubernetes/pkg/apis/admissionregistration"
+	"k8s.io/apimachinery/pkg/types"
+	"k8s.io/apimachinery/pkg/runtime"
 )
 
 type ConversionStrategyType string
 
 const (
 	// NopConverter is a converter that only sets apiversion of the CR and leave everything else unchanged.
-	NopConverter ConversionStrategyType = "no-op"
+	NopConverter     ConversionStrategyType = "nop"
+	WebhookConverter ConversionStrategyType = "webhook"
 )
 
 // CustomResourceDefinitionSpec describes how a user wants their resource to appear
@@ -289,4 +292,37 @@ type CustomResourceSubresourceScale struct {
 	// subresource will default to the empty string.
 	// +optional
 	LabelSelectorPath *string
+}
+
+// ConversionReview describes a conversion request/response.
+type ConversionReview struct {
+	metav1.TypeMeta
+	// Request describes the attributes for the conversion request.
+	// +optional
+	Request *ConversionRequest
+	// Response describes the attributes for the conversion response.
+	// +optional
+	Response *ConversionResponse
+}
+
+// ConversionRequest describes a conversion request parameters.
+type ConversionRequest struct {
+	// UID is an identifier for the individual request/response. It allows us to distinguish instances of requests which are
+	// otherwise identical (parallel requests, requests when earlier requests did not modify etc)
+	// The UID is meant to track the round trip (request/response) between the KAS and the WebHook, not the user request.
+	// It is suitable for correlating log entries between the webhook and apiserver, for either auditing or debugging.
+	UID types.UID
+	// The version to convert given object to. E.g. "stable.example.com/v1"
+	APIVersion string
+	// Object is the CRD object to be converted.
+	Object runtime.RawExtension
+}
+
+// ConversionResponse describes a conversion response.
+type ConversionResponse struct {
+	// UID is an identifier for the individual request/response.
+	// This should be copied over from the corresponding ConversionRequest.
+	UID types.UID
+	// ConvertedObject is the converted version of request.Object.
+	ConvertedObject runtime.RawExtension
 }

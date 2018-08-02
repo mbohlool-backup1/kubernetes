@@ -182,7 +182,7 @@ func ValidateCustomResourceDefinitionSpec(spec *apiextensions.CustomResourceDefi
 	}
 
 	if spec.Conversion != nil {
-		allErrs = append(allErrs, validateEnumStrings(fldPath.Child("conversion").Child("strategy"), string(spec.Conversion.Strategy), []string{string(apiextensions.NopConverter)}, true)...)
+		allErrs = append(allErrs, validateEnumStrings(fldPath.Child("conversion").Child("strategy"), string(spec.Conversion.Strategy), []string{string(apiextensions.NopConverter), string(apiextensions.WebhookConverter)}, true)...)
 	}
 
 	return allErrs
