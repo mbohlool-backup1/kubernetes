@@ -26,7 +26,6 @@ import (
 	apiextensions "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	pkgtypes "k8s.io/apimachinery/pkg/types"
 	types "k8s.io/apimachinery/pkg/types"
 )
 
@@ -288,10 +287,7 @@ func RegisterConversions(s *runtime.Scheme) error {
 func autoConvert_v1beta1_ConversionRequest_To_apiextensions_ConversionRequest(in *ConversionRequest, out *apiextensions.ConversionRequest, s conversion.Scope) error {
 	out.UID = types.UID(in.UID)
 	out.APIVersion = in.APIVersion
-	// TODO: Inefficient conversion - can we improve it?
-	if err := s.Convert(&in.Object, &out.Object, 0); err != nil {
-		return err
-	}
+	out.Object = in.Object
 	return nil
 }
 
@@ -301,12 +297,9 @@ func Convert_v1beta1_ConversionRequest_To_apiextensions_ConversionRequest(in *Co
 }
 
 func autoConvert_apiextensions_ConversionRequest_To_v1beta1_ConversionRequest(in *apiextensions.ConversionRequest, out *ConversionRequest, s conversion.Scope) error {
-	out.UID = pkgtypes.UID(in.UID)
+	out.UID = types.UID(in.UID)
 	out.APIVersion = in.APIVersion
-	// TODO: Inefficient conversion - can we improve it?
-	if err := s.Convert(&in.Object, &out.Object, 0); err != nil {
-		return err
-	}
+	out.Object = in.Object
 	return nil
 }
 
@@ -317,10 +310,7 @@ func Convert_apiextensions_ConversionRequest_To_v1beta1_ConversionRequest(in *ap
 
 func autoConvert_v1beta1_ConversionResponse_To_apiextensions_ConversionResponse(in *ConversionResponse, out *apiextensions.ConversionResponse, s conversion.Scope) error {
 	out.UID = types.UID(in.UID)
-	// TODO: Inefficient conversion - can we improve it?
-	if err := s.Convert(&in.ConvertedObject, &out.ConvertedObject, 0); err != nil {
-		return err
-	}
+	out.ConvertedObject = in.ConvertedObject
 	return nil
 }
 
@@ -330,11 +320,8 @@ func Convert_v1beta1_ConversionResponse_To_apiextensions_ConversionResponse(in *
 }
 
 func autoConvert_apiextensions_ConversionResponse_To_v1beta1_ConversionResponse(in *apiextensions.ConversionResponse, out *ConversionResponse, s conversion.Scope) error {
-	out.UID = pkgtypes.UID(in.UID)
-	// TODO: Inefficient conversion - can we improve it?
-	if err := s.Convert(&in.ConvertedObject, &out.ConvertedObject, 0); err != nil {
-		return err
-	}
+	out.UID = types.UID(in.UID)
+	out.ConvertedObject = in.ConvertedObject
 	return nil
 }
 
@@ -344,24 +331,8 @@ func Convert_apiextensions_ConversionResponse_To_v1beta1_ConversionResponse(in *
 }
 
 func autoConvert_v1beta1_ConversionReview_To_apiextensions_ConversionReview(in *ConversionReview, out *apiextensions.ConversionReview, s conversion.Scope) error {
-	if in.Request != nil {
-		in, out := &in.Request, &out.Request
-		*out = new(apiextensions.ConversionRequest)
-		if err := Convert_v1beta1_ConversionRequest_To_apiextensions_ConversionRequest(*in, *out, s); err != nil {
-			return err
-		}
-	} else {
-		out.Request = nil
-	}
-	if in.Response != nil {
-		in, out := &in.Response, &out.Response
-		*out = new(apiextensions.ConversionResponse)
-		if err := Convert_v1beta1_ConversionResponse_To_apiextensions_ConversionResponse(*in, *out, s); err != nil {
-			return err
-		}
-	} else {
-		out.Response = nil
-	}
+	out.Request = (*apiextensions.ConversionRequest)(unsafe.Pointer(in.Request))
+	out.Response = (*apiextensions.ConversionResponse)(unsafe.Pointer(in.Response))
 	return nil
 }
 
@@ -371,24 +342,8 @@ func Convert_v1beta1_ConversionReview_To_apiextensions_ConversionReview(in *Conv
 }
 
 func autoConvert_apiextensions_ConversionReview_To_v1beta1_ConversionReview(in *apiextensions.ConversionReview, out *ConversionReview, s conversion.Scope) error {
-	if in.Request != nil {
-		in, out := &in.Request, &out.Request
-		*out = new(ConversionRequest)
-		if err := Convert_apiextensions_ConversionRequest_To_v1beta1_ConversionRequest(*in, *out, s); err != nil {
-			return err
-		}
-	} else {
-		out.Request = nil
-	}
-	if in.Response != nil {
-		in, out := &in.Response, &out.Response
-		*out = new(ConversionResponse)
-		if err := Convert_apiextensions_ConversionResponse_To_v1beta1_ConversionResponse(*in, *out, s); err != nil {
-			return err
-		}
-	} else {
-		out.Response = nil
-	}
+	out.Request = (*ConversionRequest)(unsafe.Pointer(in.Request))
+	out.Response = (*ConversionResponse)(unsafe.Pointer(in.Response))
 	return nil
 }
 

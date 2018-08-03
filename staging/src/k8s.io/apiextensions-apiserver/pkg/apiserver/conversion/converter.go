@@ -23,18 +23,26 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
+	utilfeature "k8s.io/apiserver/pkg/util/feature"
+	apiextensionsfeatures "k8s.io/apiextensions-apiserver/pkg/features"
 )
 
 type CRDConverterFactory struct {
+	// webhookConverterFactory is the factory for webhook converters.
+	// This field should not be used if CustomResourceWebhookConversion feature is disabled.
 	webhookConverterFactory *webhookConverterFactory
 }
 
 func NewCRDConverterFactory() (*CRDConverterFactory, error) {
-	webhookConverterFactory, err := newWebhookConverterFactory()
-	if err != nil {
-		return nil, err
+	converterFactory := &CRDConverterFactory{}
+	if utilfeature.DefaultFeatureGate.Enabled(apiextensionsfeatures.CustomResourceWebhookConversion) {
+		webhookConverterFactory, err := newWebhookConverterFactory()
+		if err != nil {
+			return nil, err
+		}
+		converterFactory.webhookConverterFactory = webhookConverterFactory
 	}
-	return &CRDConverterFactory{webhookConverterFactory}, nil
+	return converterFactory, nil
 }
 
 // NewCRDConverter returns a new CRD converter based on the conversion settings in crd object.
@@ -61,6 +69,9 @@ func (m *CRDConverterFactory) NewConverter(crd *apiextensions.CustomResourceDefi
 		}
 		return &safeConverterWrapper{unsafe}, unsafe, nil
 	case apiextensions.WebhookConverter:
+		if !utilfeature.DefaultFeatureGate.Enabled(apiextensionsfeatures.CustomResourceWebhookConversion) {
+			return nil, nil, fmt.Errorf("webhook conversion is disabled on this cluster")
+		}
 		unsafe, err := m.webhookConverterFactory.NewWebhookConverter(validVersions, crd)
 		if err != nil {
 			return nil, nil, err

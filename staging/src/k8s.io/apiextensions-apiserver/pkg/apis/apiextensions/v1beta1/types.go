@@ -294,6 +294,8 @@ type CustomResourceSubresourceScale struct {
 	LabelSelectorPath *string `json:"labelSelectorPath,omitempty" protobuf:"bytes,3,opt,name=labelSelectorPath"`
 }
 
+// +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+
 // ConversionReview describes a conversion request/response.
 type ConversionReview struct {
 	metav1.TypeMeta `json:",inline"`

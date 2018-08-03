@@ -12,6 +12,7 @@ filegroup(
     srcs = [
         ":package-srcs",
         "//test/images/clusterapi-tester:all-srcs",
+        "//test/images/crd-conversion-webhook:all-srcs",
         "//test/images/entrypoint-tester:all-srcs",
         "//test/images/fakegitserver:all-srcs",
         "//test/images/goproxy:all-srcs",
