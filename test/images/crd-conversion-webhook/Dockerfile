@@ -14,5 +14,5 @@
 
 FROM BASEIMAGE
 
-ADD crd-conversion-webhook /crd_conversion_webhook
+ADD crd_conversion_webhook /crd_conversion_webhook
 ENTRYPOINT ["/crd_conversion_webhook"]
