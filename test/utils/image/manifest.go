@@ -48,7 +48,7 @@ func (i *ImageConfig) SetVersion(version string) {
 }
 
 var (
-	CRDConversionWebhook     = ImageConfig{e2eRegistry, "crd-conversion-webhook", "1.10v2", true}
+	CRDConversionWebhook     = ImageConfig{e2eRegistry, "crd-conversion-webhook", "1.12v2", true}
 	AdmissionWebhook         = ImageConfig{e2eRegistry, "k8s-sample-admission-webhook", "1.10v2", true}
 	APIServer                = ImageConfig{e2eRegistry, "k8s-aggregator-sample-apiserver", "1.7v2", true}
 	AppArmorLoader           = ImageConfig{gcRegistry, "apparmor-loader", "0.1", false}
