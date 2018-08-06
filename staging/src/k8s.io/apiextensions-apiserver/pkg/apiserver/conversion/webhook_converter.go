@@ -100,21 +100,24 @@ func createConversionReview(obj runtime.Object, apiVersion string) *v1beta1.Conv
 }
 
 func (c *webhookConverter) ConvertToVersion(in runtime.Object, target runtime.GroupVersioner) (runtime.Object, error) {
-	kind := in.GetObjectKind().GroupVersionKind()
-	gvk, ok := target.KindForGroupVersionKinds([]schema.GroupVersionKind{kind})
+	fromGVK := in.GetObjectKind().GroupVersionKind()
+	toGVK, ok := target.KindForGroupVersionKinds([]schema.GroupVersionKind{fromGVK})
 	if !ok {
 		// TODO: should this be a typed error?
-		return nil, fmt.Errorf("%v is unstructured and is not suitable for converting to %q", kind, target)
+		return nil, fmt.Errorf("%v is unstructured and is not suitable for converting to %q", fromGVK, target)
 	}
-	if !c.validVersions[gvk.GroupVersion()] {
-		return nil, fmt.Errorf("request to convert CRD to an invalid group/version: %s", gvk.String())
+	if !c.validVersions[toGVK.GroupVersion()] {
+		return nil, fmt.Errorf("request to convert CRD to an invalid group/version: %s", toGVK.String())
 	}
-	if in.GetObjectKind().GroupVersionKind() == gvk {
+	if !c.validVersions[fromGVK.GroupVersion()] {
+		return nil, fmt.Errorf("request to convert CRD from an invalid group/version: %s", fromGVK.String())
+	}
+	if fromGVK == toGVK {
 		// No conversion is required
 		return in, nil
 	}
 
-	request := createConversionReview(in, gvk.GroupVersion().String())
+	request := createConversionReview(in, toGVK.GroupVersion().String())
 	response := &v1beta1.ConversionReview{}
 	ctx := context.TODO()
 	if err := c.restClient.Post().Context(ctx).Body(&request).Do().Into(response); err != nil {
@@ -125,6 +128,12 @@ func (c *webhookConverter) ConvertToVersion(in runtime.Object, target runtime.Gr
 	if response.Response == nil {
 		// TODO: Return a webhook specific error to be able to convert it to meta.Status
 		return nil, fmt.Errorf("conversion webhook response was absent for %s", c.name)
+	}
+
+	ret := response.Response.ConvertedObject.Object
+	convertedGVK := ret.GetObjectKind().GroupVersionKind()
+	if convertedGVK != toGVK {
+		return nil, fmt.Errorf("invalid GVK returned by conversion webhook. expected=%s, actual=%s", toGVK, convertedGVK)
 	}
 
 	return response.Response.ConvertedObject.Object, nil

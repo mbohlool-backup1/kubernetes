@@ -27,6 +27,7 @@ import (
 	"k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
+		"strings"
 )
 
 // Config contains the server (the webhook) cert and key.
@@ -43,13 +44,55 @@ func (c *Config) addFlags() {
 		"File containing the default x509 private key matching --tls-cert-file.")
 }
 
-func convertCRD(Object *unstructured.Unstructured, version string) (*unstructured.Unstructured, error) {
+func convertCRD(Object *unstructured.Unstructured, toVersion string) (*unstructured.Unstructured, error) {
 	glog.V(2).Info("converting crd")
 
 	convertedObject := Object.DeepCopy()
+	fromVersion := Object.GetAPIVersion()
 
-	// convert it
-	convertedObject.SetAPIVersion(version)
+	if toVersion == fromVersion {
+		return nil, fmt.Errorf("conversion from a version to itself should not call the webhook: %s", toVersion)
+	}
+
+	switch Object.GetAPIVersion() {
+	case "stable.example.com/v1":
+		switch toVersion {
+		case "stable.example.com/v2":
+			hostPort, ok := convertedObject.Object["hostPort"]
+			if !ok {
+				return nil, fmt.Errorf("expected hostPort in stable.example.com/v1")
+			}
+			delete(convertedObject.Object, "hostPort")
+			parts := strings.Split(hostPort.(string), ":")
+			convertedObject.Object["host"] = parts[0]
+			convertedObject.Object["port"] = parts[1]
+		default:
+			return nil, fmt.Errorf("unexpected conversion version %s", toVersion)
+		}
+	case "stable.example.com/v2":
+		switch toVersion {
+		case "stable.example.com/v1":
+			host, ok := convertedObject.Object["host"]
+			if !ok {
+				return nil, fmt.Errorf("expected host in stable.example.com/v2")
+			}
+			port, ok := convertedObject.Object["port"]
+			if !ok {
+				return nil, fmt.Errorf("expected port in stable.example.com/v2")
+			}
+			delete(convertedObject.Object, "host")
+			delete(convertedObject.Object, "port")
+			convertedObject.Object["hostPort"] = fmt.Sprintf("%s:%s", host, port)
+		default:
+			return nil, fmt.Errorf("unexpected conversion version %s", toVersion)
+		}
+
+	default:
+		return nil, fmt.Errorf("unexpected conversion version %s", fromVersion)
+	}
+
+	// convertion is succeded, lets set the converted object API version to the correct one
+	convertedObject.SetAPIVersion(toVersion)
 
 	return convertedObject, nil
 }
