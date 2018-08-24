@@ -36,7 +36,7 @@ const (
 )
 
 // ClientConfigInterface is the interface to access webhook client config to share webhook connect code between
-// admission webhooks and CRD conversion webhooks.
+// admission webhooks and CR conversion webhooks.
 type ClientConfigInterface interface {
 	GetURL() *string
 	GetCABundle() []byte
