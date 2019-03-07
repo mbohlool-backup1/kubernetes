@@ -67,7 +67,8 @@ func CreateAdmissionReview(attr *generic.VersionedAttributes) admissionv1beta1.A
 			OldObject: runtime.RawExtension{
 				Object: attr.VersionedOldObject,
 			},
-			DryRun: &dryRun,
+			DryRun:  &dryRun,
+			Options: runtime.RawExtension{Object: attr.GetOperationOption()},
 		},
 	}
 }

@@ -75,6 +75,9 @@ type AdmissionRequest struct {
 	// Defaults to false.
 	// +optional
 	DryRun *bool `json:"dryRun,omitempty" protobuf:"varint,11,opt,name=dryRun"`
+	// Options is the operation option structure user passed to the API call. e.g. `DeleteOption` or `CreateOption`.
+	// +optional
+	Options runtime.RawExtension `json:"options,omitempty" protobuf:"bytes,12,opt,name=options"`
 }
 
 // AdmissionResponse describes an admission response.

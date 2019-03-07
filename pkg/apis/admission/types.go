@@ -78,6 +78,9 @@ type AdmissionRequest struct {
 	// Defaults to false.
 	// +optional
 	DryRun *bool
+	// Options is the operation option structure user passed to the API call. e.g. `DeleteOption` or `CreateOption`.
+	// +optional
+	Options runtime.RawExtension
 }
 
 // AdmissionResponse describes an admission response.
